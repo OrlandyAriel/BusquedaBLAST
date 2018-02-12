@@ -43,7 +43,7 @@ class PeticionGETBlast:
 
             parrafo = soup.p
             parrafo = parrafo.text
-            self.result = ("No significant similarity" not in parrafo)
+            self.result = ("No significant similarity" in parrafo)
 
         except AttributeError as err:
             print("No se ha CREADO la petición. NOTA:puede que la petición no",
