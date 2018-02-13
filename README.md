@@ -27,15 +27,16 @@ import putblast as p
 
 peticionPut = p.PeticionPUTBlast()
 cadenaATGC = "GATGACGGTGTCTACATTGTTCCCGACCACTCATCTCCTCTGTCATGCCCGAAACGTCTTCTCAAACCCGTCGT"
-peticionPut.construir_peticion("blastn","nr",cadenaATGC)
+peticionPut.construir_peticion(cadenaATGC, "nr","blastn")
 
 rid = peticionPut.realizar_peticion()
 
 print(rid)
 
 ```
+>**NOTA IMPORTANTE: SI PRETENDE REALIZAR VARIAS PETICIONES SEGUIDAS, SE DEBERÁ DEJAR UN MARGEN MAYOR DE 10 SEGUDNOS PARA EVITAR QUE EL SERVIDOR LO DETECTE COMO ATAQUE, DE LO CONTRARIO NO PERMITIRÁ REALIZAR LAS PETICIONES**
 
-Para recuperar el resultado se hará de la siguiente manera.
+Código de ejemplo de cómo realizar una petición GET a Blast para recuperar el resultado.
 
 ``` python
 
