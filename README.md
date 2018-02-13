@@ -23,7 +23,7 @@ El método **construir_peticion** recibe 3 parámetros los cuales están sujeto 
 Código de ejemplo de cómo hacer una petición PUT a Blast
 
 ```python
-import PeticionPUTBlast as p
+import putblast as p
 
 peticionPut = p.PeticionPUTBlast()
 cadenaATGC = "GATGACGGTGTCTACATTGTTCCCGACCACTCATCTCCTCTGTCATGCCCGAAACGTCTTCTCAAACCCGTCGT"
@@ -39,7 +39,7 @@ Para recuperar el resultado se hará de la siguiente manera.
 
 ``` python
 
-import PeticionGETBlast as p
+import getblast as p
 
 peticionGet = p.PeticionGETBlast()
 
