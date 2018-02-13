@@ -5,9 +5,9 @@ Búsqueda en la base de datos [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) 
 ## Parámetros
 El método **construir_peticion** recibe 3 parámetros los cuales están sujeto a condiciones para que se pueda realizar una búsqueda correctamente.
 
-* **Parámetros: **
+* **Parámetros:**
 	* QUERY: Consulta de búsqueda, tiene las siguientes opciones de formato:
-		* [accesion](https://support.ncbi.nlm.nih.gov/link/portal/28045/28049/Article/499/What-are-accession-numbers)
+		* [Accesion](https://support.ncbi.nlm.nih.gov/link/portal/28045/28049/Article/499/What-are-accession-numbers)
 		* [GI](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)
 		* [FASTA](https://www.ncbi.nlm.nih.gov/Sitemap/sequenceIDs.html)
     * DATABASE: Base de datos de ensamblado de genomas, tiene muchas opciones, para saber cuál elegir mirar el siguiente [enlace (apartado: BLAST Assembled Genomes)](https://nihlibrary.ors.nih.gov/bioinfo/BLAST/Blast.htm), en el podrá consultar todas las bases de datos disponibles.
