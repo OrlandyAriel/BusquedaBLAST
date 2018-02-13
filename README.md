@@ -6,13 +6,13 @@ Búsqueda en la base de datos [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) 
 El método **construir_peticion** recibe 3 parámetros los cuales están sujeto a condiciones para que se pueda realizar una búsqueda correctamente.
 
 * **Parámetros:**
-	* QUERY: Consulta de búsqueda, tiene las siguientes opciones de formato:
+	* **QUERY:** Consulta de búsqueda, tiene las siguientes opciones de formato:
 		* [Accesion](https://support.ncbi.nlm.nih.gov/link/portal/28045/28049/Article/499/What-are-accession-numbers)
 		* [GI](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp)
 		* [FASTA](https://www.ncbi.nlm.nih.gov/Sitemap/sequenceIDs.html)
-    * DATABASE: Base de datos de ensamblado de genomas, tiene muchas opciones, para saber cuál elegir mirar el siguiente [enlace (apartado: BLAST Assembled Genomes)](https://nihlibrary.ors.nih.gov/bioinfo/BLAST/Blast.htm), en el podrá consultar todas las bases de datos disponibles.
+    * **DATABASE:** Base de datos de ensamblado de genomas, tiene muchas opciones, para saber cuál elegir mirar el siguiente [enlace (apartado: BLAST Assembled Genomes)](https://nihlibrary.ors.nih.gov/bioinfo/BLAST/Blast.htm), en el podrá consultar todas las bases de datos disponibles.
     	* En el ejemplo de demostración se utiliza nr (Nucleotide Colletion (nr/nt)).
-    * PROGRAM: Tipo de búsqueda BLAST a utilizar, [ver con más detalles](https://www.ibm.com/support/knowledgecenter/es/SSEPGG_8.2.0/com.ibm.db2.ii.doc/opt/c0007271.htm).
+    * **PROGRAM:** Tipo de búsqueda BLAST a utilizar, [ver con más detalles](https://www.ibm.com/support/knowledgecenter/es/SSEPGG_8.2.0/com.ibm.db2.ii.doc/opt/c0007271.htm).
     	* BLASTn
     	> **NOTA:** Uno de los más utilizados generalmente, también se utiliza en el ejemplo.
     	* BLASTp
