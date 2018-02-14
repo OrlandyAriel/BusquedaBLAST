@@ -38,7 +38,7 @@ class PeticionGETBlast:
         secuencia que se pretende mirar si hay o no similitud.
         '''
         try:
-            page = request.urlopen(self.peticion)
+            page = request.urlopen(self.peticion, timeout = 20)
             soup = bs.BeautifulSoup(page, 'html.parser')
 
             parrafo = soup.p

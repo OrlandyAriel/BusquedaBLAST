@@ -46,12 +46,10 @@ class PeticionPUTBlast:
         se puede consultar el resultado de la petición.
         '''
         try:
-            page = request.urlopen(self.peticion)
+            page = request.urlopen(self.peticion, timeout = 20)
             soup = bs.BeautifulSoup(page, 'html.parser')
             self.rid = soup.find('input', {'id': 'rid'}).attrs['value']
         except AttributeError as err:
             print("No se ha CREADO la petición. NOTA:puede que la petición no",
                   "se haya creado aun, vea el método construirPeticion.",
                   " Otra ayuda: ", err)
-
-        return self.rid
